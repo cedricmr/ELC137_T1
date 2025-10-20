@@ -17,7 +17,8 @@ export default function Header() {
         <a href="/conta" style={{ marginRight: "1rem", color: "#fff" }}>Conta</a>
         <a href="/transferir" style={{ marginRight: "1rem", color: "#fff" }}>Transferir</a>
         <a href="/extrato" style={{ marginRight: "1rem", color: "#fff" }}>Extrato</a>
-        <a href="/cadastro" style={{ color: "#fff", fontWeight: "bold" }}>Cadastro</a>
+        <a href="/cadastro" style={{ marginRight: "1rem", color: "#fff"}}>Cadastro</a>
+        <a href="/emprestimo" style={{ color: "#fff" }}>Empréstimos</a>
       </nav>
     </header>
   );
