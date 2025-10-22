@@ -4,7 +4,7 @@ import './header.css';
 export function Header(){
     return (
         <header className="nome">
-            <h1>Cabeçalho</h1>
+            <h1>BDD | Banco Digital Distribuído</h1>
         </header>
     );
 }
