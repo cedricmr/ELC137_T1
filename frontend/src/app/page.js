@@ -1,11 +1,20 @@
+import { Header } from "@/components/header";
+import React from "react";
+
+
 export default function Home(){
   return(
     <div>
-      <h1>
-        tela inicial do trabalho de sistemas de informação distribuidos
-      </h1>
-
+      <Header /> 
+      <p>Exemplo de paragrafo de texto</p>
     </div>
-  )
+
+  );
 }
+
+
+/**
+ * Cedric: Login, Transferência
+ * Gabriel: Cadastro, Página da Conta
+ */
 
