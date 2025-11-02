@@ -1,23 +1,10 @@
 @charset "UTF-8"; /* conjunto de caracteres */
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import './variables.css';
 
 /*  atalho do VS Code para comentar codigo em qualquer linguagem:
  selecione o trecho que deseja comentar
  CONTROL + ; 
  */
-
- 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
-
 
 /* reset CSS */
 * {
@@ -33,35 +20,64 @@ body {
 }
 
 body {
-  /* color: var(--foreground);
-  background: var(--background); */
-  font-family: Arial, Helvetica, sans-serif; /* familia */
+  font-family: var(--font-text), Arial, Helvetica, sans-serif; /* familia */
+  color: var(--text-grafite);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-h-pop), 'Times New Roman', Times, serif;
 }
 
 p {
   /* propriedades de FONTE CSS */
   font-weight: normal; /* peso(espessura); mesmo que =400*/
   font-style: normal;  /* estilo */
-  color: black; /* cor */
+  /* color: black; cor */
   text-align: left; /* alinhamento */
   text-indent: 15px; /* identação */
 }
+
 /*
 ORDEM DA PROPRIEDADE SHORTHAND:
 font: font-style > font-weight > font-size > font-family
 estilo peso tamanho familia
 */
-
-
 a {
   color: inherit;
   text-decoration: none;
 }
 
+
+button {
+  text-decoration: none;
+  border: 1px solid chocolate;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  /*
+  especificos
+  
+  fontfamily
+  width
+  height
+  padding 10px 20px
+  */
+
+}
+
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
 /*@media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
 }*/
+
+

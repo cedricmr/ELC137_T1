@@ -4,7 +4,7 @@ import './header.css';
 export function Header(){
     return (
         <header className="nome">
-            <h1>BDD | Banco Digital Distribuído</h1>
+            <h1>NOVA Bank</h1>
         </header>
     );
 }
