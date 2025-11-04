@@ -3,7 +3,7 @@ import './header.css';
 
 export function Header(){
     return (
-        <header className="nome">
+        <header className="head">
             <h1>NOVA Bank</h1>
         </header>
     );

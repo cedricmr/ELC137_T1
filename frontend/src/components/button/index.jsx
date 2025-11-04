@@ -1,6 +1,12 @@
 import React from "react"
 
-export function Button({children, onClick, type='button', variant='primary'}){
+export function Button({
+    children, 
+    onClick, 
+    type='button', 
+    className= "", 
+    variant='primary'
+}){
     return (
         <button
             onClick={onClick} 

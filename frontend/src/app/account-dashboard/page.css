@@ -1,0 +1,102 @@
+/* .page-container {
+  display: grid;
+  grid-template-columns: 20% 1fr 25%;
+  height: 100vh;
+  background-color: #f4f6f8;
+  font-family: 'Inter', sans-serif;
+  color: #1a1a1a;
+} */
+
+
+/* ...existing code... */
+.main-container {
+  display: grid;
+  grid-template-columns: 20% 1fr 25%;
+  height: 100%;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* ======= Coluna esquerda ======= */
+.action {
+  background-color: #1e3a8a; /* azul do banco */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 2rem 1rem;
+  gap: 0.8rem;
+}
+
+.button {
+    flex: 1 1 calc(33% - 15px);
+    padding: 15px 0;
+    text-align: center;
+    background-color: #004aad;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0066ff;
+}
+
+/* saldo na main central */
+.saldo {
+  /* background-color: white; */
+  /* margin: 1.5rem; */
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 10px;
+  margin: 1rem 0;
+}
+
+.saldo-lbl {
+  /* font-size: 1rem; */
+  color: #555;
+}
+
+.val {
+  font-size: 1.8rem;
+  color: #1e3a8a;
+  font-weight: 700;
+}
+
+
+/* ======= Lado direito ======= */
+.conta-section {
+  background-color: #f9fafb;
+  padding: 2rem 1.5rem;
+  border-left: 2px solid #e5e7eb;
+}
+
+/* .inf {
+  display: flex;
+  flex-direction: column;
+} */
+
+.inf h2 {
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+.inf p {
+  margin: 0.4rem 0;
+  font-size: 0.95rem;
+}
+
+
+
