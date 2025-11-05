@@ -39,7 +39,7 @@ function Aside() {
 function Saldo() {
   return (
     <div className="saldo">
-      <h2 className="saldo-lbl">saldo bancario disponivel</h2>
+      <h2 className="saldo-lbl">Saldo bancário disponível</h2>
       <h2 className="val">+$500.00</h2>
     </div>
   );

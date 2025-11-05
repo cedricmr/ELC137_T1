@@ -5,7 +5,7 @@ import z from "zod";  // validacao com Zod
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Header } from "@/components/header";
 
-const schema = z.object({
+const schema = z.object({ 
   nome: z.string().min(8, "Nome muito curto"),
   documento: z.string().min(10, "Documento inválido"),
   senha: z.string().min(3, "Senha muito curta"),
