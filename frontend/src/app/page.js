@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";  // formularios
 import z from "zod";  // validacao com Zod
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Header } from "@/components/header";
+import Link from "next/link";
 
 const schema = z.object({ 
   nome: z.string().min(8, "Nome muito curto"),
@@ -66,6 +67,15 @@ export default function Home() {
           Criar conta
         </button>
       </form>
+      <div style={{ textAlign: "center", marginTop: "20px" }}>
+        <Link 
+          href="/login" 
+          style={{ color: "#0b2545", textDecoration: "underline" }}
+          prefetch
+        >
+          Já tem uma conta? Faça login
+        </Link>
+      </div>
     </div>
   );
 }
